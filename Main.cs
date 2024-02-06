@@ -167,6 +167,7 @@ namespace ExtraHotKeys
             var Id = btn.TagInt();
 
             OpenFileDialog fileOpen = new OpenFileDialog();
+            fileOpen.DereferenceLinks = false;
 
             if (fileOpen.ShowDialog() == DialogResult.OK)
             {
